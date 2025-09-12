@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-1</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .form1 {
+            margin: 10px;
+            padding: 15px;
+            border: 2px solid gray;
+            background-color: mintcream;
+            max-width: 500px;
+        }
+
+        .section1 {
+            display: inline-block;
+            width: 25%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .section2 {
+            display: block;
+            width: 35%;
+        }
+
+        .section3 {
+            display: block;
+            width: 35%;
+
+        }
+
+        .section4 {
+            display: block;
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h4>RASEL</h4>
+            </div>
+            <ul>
+                <li>
+                    <a href="Home Page.html">Home</a>
+
+                    <ul class="dropdown">
+                        <li><a href="#">Home2</a></li>
+                        <li><a href="#">Home3</a></li>
+                        <li><a href="#">Home4</a></li>
+                        <li><a href="#">Home5</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">Pages</a>
+                    <ul class="dropdown">
+                        <li><a href="Table.html">Table</a></li>
+                        <li><a href="Form.html">Form-1</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contract</a></li>
+                <input type="search" name="searchbox" id="searchbx" placeholder="Search Here">
+            </ul>
+        </nav>
+    </header>
+
+    <header>
+
+    </header>
+    <main>
+        <section class="form1">
+            <h2 style="text-align: center;text-decoration: underline;">Please Provide Your info:</h2>
+            <div class="section1">
+                
+                <br>
+                <div>
+                    <label> Your Name: </label>
+                    <input type="text" name="" id="name" placeholder="Your Name">
+                </div>
+                <div>
+                    <label> Phone No:</label>
+                    <input type="text" name="" id="number" placeholder="Phone Number">
+                </div>
+                <div>
+                    <label for="email">Your Email:</label>
+                    <input type="email" name="" id="email" placeholder="Your Email">
+                </div>
+            </div>
+            <div class="section2">
+                <fieldset>
+                    <legend>Which mobile do you want to buy?
+                    </legend>
+                    <label for="mobile"></label>
+                    <input type="radio" name="mobile" id="Realme">Realme
+
+                    <label for="mobile"></label>
+                    <input type="radio" name="mobile" id="vivo">Vivo
+
+                    <label for="mobile"></label>
+                    <input type="radio" name="mobile" id="Samsung">Samsung
+
+                    <label for="mobile"> </label>
+                    <input type="radio" name="mobile" id="Oppo">Oppo
+
+
+                </fieldset>
+            </div>
+            <br>
+            <div class="section3">
+                <fieldset>
+                    <legend>Mark your favourit phone:</legend>
+                    <label for="phone"></label>
+                    <input type="checkbox" name="phone" id="Realme">Realme
+
+                    <label for="phone"> </label>
+                    <input type="checkbox" name="phone" id="Vivo">Vivo
+
+                    <label for="phone"></label>
+                    <input type="checkbox" name="phone" id="Samsung">Samsung
+
+                    <label for="phone"> </label>
+                    <input type="checkbox" name="phone" id="Oppo">Oppo
+
+                </fieldset>
+            </div>
+            <br>
+            <div class="section4">
+                <label for="Text">Add your comments</label>
+                <textarea name="text" id="" cols="50" rows="10" placeholder="input your comments...."></textarea>
+
+                <label for="button">
+                    <input type="reset" value="Reset">
+                    <input type="button" value="Submit">
+                </label>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
