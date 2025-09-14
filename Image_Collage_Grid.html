@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image_Collage</title>
+    <link rel="stylesheet" href="Style.css">
+
+    <style>
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+
+        }
+
+        .row {
+            height: 30vw;
+            display: flex;
+            gap: 5px;
+            margin-bottom: 5px;
+        }
+
+        .row>div {
+            flex: 1;
+        }
+
+        .square {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+
+        }
+
+
+
+        .vertical img {
+            height: calc((100% - 5px)/2);
+        }
+
+        .containerr {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 200px) 50px 50px;
+            gap: 5px;
+            text-align: center;
+
+
+        }
+
+        .box {
+
+            border: 1px solid green;
+            background-color: rgb(162, 184, 176);
+            margin-top: 5px;
+
+
+        }
+
+        #box-1 {
+            grid-row: span 5;
+        }
+
+        #box-11,
+        #box-12 {
+            grid-column: span 3;
+        }
+
+
+        @media screen and (max-width:576px) {
+            .row {
+                flex-direction: column;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h4>RASEL</h4>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+            
+                <ul class="dropdown">
+                    <li><a href="#">Home2</a></li>
+                    <li><a href="#">Home3</a></li>
+                    <li><a href="#">Home4</a></li>
+                    <li><a href="#">Home5</a></li>
+                </ul></li>
+            
+                <li>
+                    <a href="#">Pages</a>
+                    <ul class="dropdown">
+                        <li><a href="Table.html">Table</a></li>
+                        <li><a href="Form.html">Form-1</a></li>
+                        <li><a href="Calander.html">Calander</a></li>
+                        <li><a href="Image_Collage_Grid.html">Image Grid</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contract</a></li>
+                <input type="search" name="searchbox" id="searchbx" placeholder="Search Here">
+            </ul>
+        </nav>
+    </header>
+
+
+    <Main>
+        <div class="ImageContainer">
+            <div class="row">
+                <img src="Images/A.jpg" alt="">
+            </div>
+            <div class="row">
+                <div> <img src="Images/B.jpg" alt=""></div>
+                <div> <img src="Images/C.jpg" alt=""></div>
+                <div class="vertical">
+                    <img src="Images/D.jpg" alt="">
+                    <img src="Images/I.jpg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div> <img src="Images/E.jpg" alt="">
+                </div>
+
+                <div class="square">
+
+                    <img src="Images/F.jpg" alt="">
+                    <img src="Images/F.jpg" alt="">
+                    <img src="Images/F.jpg" alt="">
+                    <img src="Images/F.jpg" alt="">
+
+                </div>
+                <div> <img src="Images/g.jpg" alt=""></div>
+            </div>
+        </div>
+    </Main>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div class="containerr">
+            <div class="box" id="box-1">box-1</div>
+            <div class="box" id="box-2">box-2</div>
+            <div class="box" id="box-3">box-3</div>
+            <div class="box" id="box-4">box-4</div>
+            <div class="box" id="box-5">box-5</div>
+            <div class="box" id="box-6">box-6</div>
+            <div class="box" id="box-7">box-7</div>
+            <div class="box" id="box-8">box-8</div>
+            <div class="box" id="box-9">box-9</div>
+            <div class="box" id="box-10">box-10</div>
+            <div class="box" id="box-11">box-11</div>
+            <div class="box" id="box-12">box-12</div>
+        </div>
+</body>
+
+</html>
