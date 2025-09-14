@@ -90,8 +90,8 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: space-around;
-    height: 750px;
+    height: auto;
+    width: auto;
 }
 
 .firstSection {
